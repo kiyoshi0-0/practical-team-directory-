@@ -11,8 +11,8 @@ body {
 .particle-canvas {
 	position: relative;
 	isolation: isolate;
-	background-color: #dceaf5;
-	background-image: linear-gradient(132deg, #e3f0f9 0%, #edf6fc 48%, #d9e9f5 100%);
+	background-color: #cbdce9;
+	background-image: linear-gradient(132deg, #d0e1ed 0%, #d8e6f0 48%, #c6dbe9 100%);
 }
 
 .particle-canvas::before {
@@ -32,8 +32,8 @@ body {
 }
 
 .particle-surface {
-	background-color: #eaf4fb;
-	background-image: linear-gradient(145deg, #f6fbff 0%, #e2eff8 100%);
+	background-color: #d5e3ed;
+	background-image: linear-gradient(145deg, #e0eaf2 0%, #cfdeea 100%);
 }
 
 .particle-avatar {
@@ -43,9 +43,9 @@ body {
 .particle-hero {
 	position: relative;
 	isolation: isolate;
-	border: 1px solid rgba(56, 189, 248, 0.45);
-	background: linear-gradient(115deg, #07111f 0%, #10233d 56%, #0b1628 100%);
-	color: #f8fafc;
+	border: 1px solid rgba(2, 132, 199, 0.38);
+	background: linear-gradient(115deg, #d9edf7 0%, #c9e0ef 56%, #e2f0f8 100%);
+	color: #0f172a;
 }
 
 .particle-hero::before {
@@ -55,8 +55,8 @@ body {
 	content: '';
 	pointer-events: none;
 	background-image:
-		radial-gradient(circle, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.5px),
-		radial-gradient(circle, rgba(56, 189, 248, 0.72) 0 1.5px, transparent 2px);
+		radial-gradient(circle, rgba(2, 132, 199, 0.64) 0 1px, transparent 1.5px),
+		radial-gradient(circle, rgba(14, 116, 144, 0.56) 0 1.5px, transparent 2px);
 	background-position: 0 0, 8px 9px;
 	background-size: 15px 15px, 31px 27px;
 	mask-image: radial-gradient(ellipse at 100% 50%, #000 0%, rgba(0, 0, 0, 0.78) 42%, transparent 88%);
@@ -90,8 +90,8 @@ body {
 }
 
 .hero-stat {
-	border: 1px solid rgba(186, 230, 253, 0.9);
-	background: linear-gradient(145deg, #f2f9fe, #dcecf7);
+	border: 1px solid rgba(135, 174, 199, 0.95);
+	background: linear-gradient(145deg, #d2e3ee, #bfd7e6);
 	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
 	color: #0f172a;
 }
@@ -111,6 +111,7 @@ body {
 .dark .particle-hero {
 	border-color: rgba(56, 189, 248, 0.55);
 	background: linear-gradient(115deg, #07111f 0%, #10233d 56%, #0b1628 100%);
+	color: #f8fafc;
 }
 
 .dark .particle-hero::before {

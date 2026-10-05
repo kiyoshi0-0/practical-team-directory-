@@ -19,7 +19,7 @@ function Navbar({ favoriteCount, isDark, onToggleTheme }) {
             <span className="block font-serif text-lg font-semibold leading-none text-neutral-950 dark:text-white">
               Team Directory
             </span>
-            <span className="mt-1 block text-[10px] font-semibold uppercase text-sky-700 dark:text-sky-300">
+            <span className="mt-1 block text-xs font-semibold uppercase text-sky-700 dark:text-sky-300">
               Team workspace
             </span>
           </span>

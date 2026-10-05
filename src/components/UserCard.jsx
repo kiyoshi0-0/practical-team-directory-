@@ -23,11 +23,11 @@ function UserCard({
 
       <dl className="mt-5 space-y-3 border-t border-neutral-200 pt-4 text-sm dark:border-neutral-800">
         <div>
-          <dt className="text-xs font-semibold text-neutral-600 dark:text-neutral-400">Organization</dt>
+          <dt className="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Organization</dt>
           <dd className="mt-1 font-medium text-neutral-900 dark:text-neutral-100">{company}</dd>
         </div>
         <div className="min-w-0">
-          <dt className="text-xs font-semibold text-neutral-600 dark:text-neutral-400">Email</dt>
+          <dt className="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Email</dt>
           <dd className="mt-1 truncate">
             <a className="font-medium text-neutral-800 hover:underline dark:text-neutral-200" href={`mailto:${email}`}>
               {email}

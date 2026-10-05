@@ -48,8 +48,8 @@ function Users({ favorites, onToggleFavorite }) {
         <div className="particle-hero-content grid gap-6 px-5 py-6 sm:px-8 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(24rem,0.9fr)] lg:items-center">
           <div>
             <span className="inline-flex rounded-md border border-sky-300 bg-sky-300 px-3 py-1 text-xs font-bold text-slate-950">Team directory</span>
-            <h1 className="mt-4 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl">Meet the team</h1>
-            <p className="mt-2 max-w-lg text-sm leading-6 text-slate-200 sm:text-base">
+            <h1 className="mt-4 font-serif text-3xl font-semibold leading-tight text-neutral-950 dark:text-white sm:text-4xl">Meet the team</h1>
+            <p className="mt-2 max-w-lg text-sm leading-6 text-slate-700 dark:text-slate-200 sm:text-base">
               Browse profiles, find contact details, and save the people you work with.
             </p>
           </div>
@@ -81,7 +81,7 @@ function Users({ favorites, onToggleFavorite }) {
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
                 placeholder="Find people..."
-                className="min-h-10 w-full rounded-md border border-neutral-300 bg-white px-3 text-sm text-neutral-950 outline-none placeholder:text-neutral-600 focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20 dark:border-neutral-700 dark:bg-neutral-950 dark:text-white dark:placeholder:text-neutral-400 dark:focus:border-sky-400"
+                className="min-h-10 w-full rounded-md border border-neutral-300 bg-sky-100 px-3 text-sm text-neutral-950 outline-none placeholder:text-neutral-600 focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20 dark:border-neutral-700 dark:bg-neutral-950 dark:text-white dark:placeholder:text-neutral-400 dark:focus:border-sky-400"
               />
             </label>
           </div>

@@ -8,11 +8,11 @@ function Home() {
       <section className="particle-hero rounded-md px-5 py-8 sm:px-9 sm:py-12">
         <div className="particle-hero-content flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold text-sky-300">Team Directory</p>
-            <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight text-white sm:text-5xl">
+            <p className="text-sm font-semibold text-sky-800 dark:text-sky-300">Team Directory</p>
+            <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight text-neutral-950 dark:text-white sm:text-5xl">
               Good work starts with knowing your people.
             </h1>
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-200">
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-700 dark:text-slate-200">
               A shared home for the names, roles, and details that help your team connect.
             </p>
           </div>
