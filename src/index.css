@@ -1,0 +1,160 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.particle-canvas {
+	position: relative;
+	isolation: isolate;
+	background-color: #dceaf5;
+	background-image: linear-gradient(132deg, #e3f0f9 0%, #edf6fc 48%, #d9e9f5 100%);
+}
+
+.particle-canvas::before {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	content: '';
+	pointer-events: none;
+	background-image:
+		radial-gradient(circle, rgba(14, 165, 233, 0.7) 0 1px, transparent 1.5px),
+		radial-gradient(circle, rgba(0, 0, 0, 0.82) 0 1px, transparent 1.5px),
+		radial-gradient(circle, rgba(0, 0, 0, 0.55) 0 1.5px, transparent 2px);
+	background-position: 29px 19px, 0 0, 9px 13px;
+	background-size: 97px 83px, 17px 17px, 37px 31px;
+	mask-image: radial-gradient(ellipse at 0% 48%, #000 0%, rgba(0, 0, 0, 0.55) 24%, transparent 66%);
+	opacity: 0.14;
+}
+
+.particle-surface {
+	background-color: #eaf4fb;
+	background-image: linear-gradient(145deg, #f6fbff 0%, #e2eff8 100%);
+}
+
+.particle-avatar {
+	background-image: none;
+}
+
+.particle-hero {
+	position: relative;
+	isolation: isolate;
+	border: 1px solid rgba(56, 189, 248, 0.45);
+	background: linear-gradient(115deg, #07111f 0%, #10233d 56%, #0b1628 100%);
+	color: #f8fafc;
+}
+
+.particle-hero::before {
+	position: absolute;
+		inset: 0 0 0 58%;
+	z-index: 0;
+	content: '';
+	pointer-events: none;
+	background-image:
+		radial-gradient(circle, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.5px),
+		radial-gradient(circle, rgba(56, 189, 248, 0.72) 0 1.5px, transparent 2px);
+	background-position: 0 0, 8px 9px;
+	background-size: 15px 15px, 31px 27px;
+	mask-image: radial-gradient(ellipse at 100% 50%, #000 0%, rgba(0, 0, 0, 0.78) 42%, transparent 88%);
+	opacity: 0.34;
+}
+
+.particle-hero::after {
+	position: absolute;
+	inset: 12% 4% 12% auto;
+	z-index: 0;
+	width: 34%;
+	content: '';
+	pointer-events: none;
+		background-image:
+		radial-gradient(circle at 18% 25%, #7dd3fc 0 3px, transparent 4px),
+		radial-gradient(circle at 82% 25%, #7dd3fc 0 3px, transparent 4px),
+		radial-gradient(circle at 82% 75%, #7dd3fc 0 3px, transparent 4px),
+		linear-gradient(90deg, transparent 17%, rgba(56, 189, 248, 0.75) 18% 82%, transparent 83%),
+		linear-gradient(rgba(56, 189, 248, 0.75), rgba(56, 189, 248, 0.75));
+	background-repeat: no-repeat;
+	background-size: 100% 100%, 100% 100%, 100% 100%, 100% 2px, 2px 50%;
+	background-position: 0 0, 0 0, 0 0, 0 25%, 82% 50%;
+	opacity: 0.86;
+	mask-image: linear-gradient(90deg, transparent, #000 25%, #000);
+	filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.28));
+}
+
+.particle-hero-content {
+	position: relative;
+	z-index: 1;
+}
+
+.hero-stat {
+	border: 1px solid rgba(186, 230, 253, 0.9);
+	background: linear-gradient(145deg, #f2f9fe, #dcecf7);
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+	color: #0f172a;
+}
+
+.hero-stat-value {
+	color: #0f172a;
+}
+
+.hero-stat-value.is-accent {
+	color: #0369a1;
+}
+
+.hero-stat-label {
+	color: #334155;
+}
+
+.dark .particle-hero {
+	border-color: rgba(56, 189, 248, 0.55);
+	background: linear-gradient(115deg, #07111f 0%, #10233d 56%, #0b1628 100%);
+}
+
+.dark .particle-hero::before {
+	background-image:
+		radial-gradient(circle, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.5px),
+		radial-gradient(circle, rgba(56, 189, 248, 0.72) 0 1.5px, transparent 2px);
+	opacity: 0.34;
+}
+
+.dark .particle-hero::after {
+	opacity: 0.68;
+}
+
+.particle-canvas.dark {
+	background-color: #0a0a0a;
+	background-image:
+		radial-gradient(circle, rgba(255, 255, 255, 0.09) 0.8px, transparent 1px),
+		linear-gradient(135deg, #0a0a0a, #141414);
+}
+
+.particle-canvas.dark::before {
+	background-image:
+		radial-gradient(circle, rgba(56, 189, 248, 0.82) 0 1px, transparent 1.5px),
+		radial-gradient(circle, rgba(255, 255, 255, 0.82) 0 1px, transparent 1.5px),
+		radial-gradient(circle, rgba(255, 255, 255, 0.56) 0 1.5px, transparent 2px);
+	opacity: 0.17;
+}
+
+.dark .particle-surface {
+	background-color: #111;
+	background-image: linear-gradient(135deg, #111, #171717);
+}
+
+.dark .particle-avatar {
+	background-image: none;
+}
+
+.dark .hero-stat {
+	border-color: rgba(255, 255, 255, 0.65);
+	background: linear-gradient(145deg, #fff, #edf6fc);
+}
+
+@media (max-width: 640px) {
+	.particle-hero::after {
+		display: none;
+	}
+}
