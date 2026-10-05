@@ -11,8 +11,8 @@ body {
 .particle-canvas {
 	position: relative;
 	isolation: isolate;
-	background-color: #cbdce9;
-	background-image: linear-gradient(132deg, #d0e1ed 0%, #d8e6f0 48%, #c6dbe9 100%);
+	background-color: #c1d5e4;
+	background-image: linear-gradient(132deg, #c7dae8 0%, #cfdfeb 48%, #bfd4e3 100%);
 }
 
 .particle-canvas::before {
@@ -32,8 +32,20 @@ body {
 }
 
 .particle-surface {
-	background-color: #d5e3ed;
-	background-image: linear-gradient(145deg, #e0eaf2 0%, #cfdeea 100%);
+	background-color: #c9dae7;
+	background-image: linear-gradient(145deg, #d9e6ef 0%, #c1d3e1 100%);
+}
+.member-card {
+	border-color: #8faabd;
+	border-top-color: #0284c7;
+	background-color: #bfd2e0;
+	background-image: linear-gradient(145deg, #c9dbe8 0%, #b7ccdb 100%);
+	box-shadow: 0 4px 16px rgba(15, 23, 42, 0.12);
+}
+.member-card:hover {
+	border-color: #0284c7;
+	background-image: linear-gradient(145deg, #d2e2ec 0%, #c2d7e4 100%);
+	box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
 }
 
 .particle-avatar {
@@ -44,7 +56,7 @@ body {
 	position: relative;
 	isolation: isolate;
 	border: 1px solid rgba(2, 132, 199, 0.38);
-	background: linear-gradient(115deg, #d9edf7 0%, #c9e0ef 56%, #e2f0f8 100%);
+	background: linear-gradient(115deg, #cfe4f1 0%, #b9d7e8 56%, #d1e6f2 100%);
 	color: #0f172a;
 }
 
@@ -90,8 +102,8 @@ body {
 }
 
 .hero-stat {
-	border: 1px solid rgba(135, 174, 199, 0.95);
-	background: linear-gradient(145deg, #d2e3ee, #bfd7e6);
+	border: 1px solid rgba(125, 165, 190, 0.95);
+	background: linear-gradient(145deg, #c7dce9, #b2ccdd);
 	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
 	color: #0f172a;
 }
@@ -143,6 +155,17 @@ body {
 .dark .particle-surface {
 	background-color: #111;
 	background-image: linear-gradient(135deg, #111, #171717);
+}
+.dark .member-card {
+	border-color: #334155;
+	border-top-color: #38bdf8;
+	background-color: #111;
+	background-image: linear-gradient(145deg, #172331, #101a26);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+}
+.dark .member-card:hover {
+	border-color: #38bdf8;
+	background-image: linear-gradient(145deg, #1b2a3a, #132131);
 }
 
 .dark .particle-avatar {

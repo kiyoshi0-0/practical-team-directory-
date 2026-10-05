@@ -12,7 +12,7 @@ function UserCard({
   onToggleFavorite,
 }) {
   return (
-    <article className="particle-surface flex h-full flex-col rounded-md border border-neutral-300 border-t-2 border-t-sky-500 p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-sky-500 hover:shadow-lg dark:border-neutral-800 dark:border-t-sky-400 dark:hover:border-sky-400">
+    <article className="particle-surface member-card flex h-full flex-col rounded-md border border-neutral-300 border-t-2 border-t-sky-500 p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-sky-500 hover:shadow-lg dark:border-neutral-800 dark:border-t-sky-400 dark:hover:border-sky-400">
       <div className="flex items-start gap-3">
         <Avatar name={name} id={id} className="size-11 text-sm" />
         <div className="min-w-0 flex-1">

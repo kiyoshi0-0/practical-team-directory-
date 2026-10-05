@@ -41,7 +41,7 @@ function Home() {
             <Link
               key={user.id}
               to={`/users/${user.id}`}
-              className="particle-surface group rounded-md border border-slate-200 border-t-2 border-t-sky-500 p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-sky-500 hover:shadow-lg dark:border-slate-800 dark:border-t-sky-400 dark:hover:border-sky-400"
+              className="particle-surface member-card group rounded-md border border-slate-200 border-t-2 border-t-sky-500 p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-sky-500 hover:shadow-lg dark:border-slate-800 dark:border-t-sky-400 dark:hover:border-sky-400"
             >
               <Avatar name={user.name} id={user.id} className="size-11 text-sm" />
               <h3 className="mt-4 text-base font-semibold text-neutral-950 group-hover:underline dark:text-white">{user.name}</h3>
